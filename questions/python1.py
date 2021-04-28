@@ -123,8 +123,14 @@ def three(input):
 
 
 def four(input):
-    return False
-
+	for index in range(len(input)-1):
+		if 'c' in input:
+			c_index = input.index('c')
+			return 'ei' == input[c_index+1:c_index+3]
+		elif 'ie' in input:
+			return True
+		elif 'ei' in input:
+			return False
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 5>
