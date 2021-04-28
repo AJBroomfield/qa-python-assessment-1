@@ -201,7 +201,12 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+	seven_nospace = inputString.replace(' ','')
+	if char not in seven_nospace:
+		return -1
+	else:
+		position = seven_nospace.index(char)+1
+	return position
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
