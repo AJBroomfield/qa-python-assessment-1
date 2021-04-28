@@ -153,7 +153,6 @@ def five(input):
 	for num in range(1, input+1):
 		total *= num 
 	return total
-print(five(8))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 6>
@@ -174,7 +173,12 @@ print(five(8))
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
-	return False
+	string = string.lower()
+	string = string.replace(' ','')
+
+	if int > len(string):
+		return False
+	return string[int-1] == char
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
