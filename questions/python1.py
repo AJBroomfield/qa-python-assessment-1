@@ -319,9 +319,5 @@ def ten(input):
 	
 	return solution
 
-# print(ten("Jeff,random.py,False,1445")) # ["Jeff"]
-# print(ten("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445"))# ["Jeff"]
-# print(ten("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445"))# ["Bert","Jeff"]
-# print(ten("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445"))#["Bert","Jeff"]
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
