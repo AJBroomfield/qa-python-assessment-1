@@ -233,7 +233,18 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	numbers = arg1.split()
+	total = []
+	for num in numbers:
+		num_list = list(num)
+		for i in range(len(num_list)):
+			num_list[i] = int(num_list[i])
+		add = sum(num_list)
+		total.append(add)
+
+	return max(total)
+
+print(eight("55 72 86"))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
