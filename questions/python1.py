@@ -244,8 +244,6 @@ def eight(arg1):
 
 	return max(total)
 
-print(eight("55 72 86"))
-
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 9>
@@ -271,7 +269,13 @@ print(eight("55 72 86"))
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+	input = input.lower()
+	total_bert = input.count('bert')
+	if total_bert <= 1:
+		return ("")
+	else: 
+		input=input.split('bert')
+		return input[1]
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
