@@ -68,7 +68,15 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	if arg1 % 15 == 0:
+		solution = 'fizzbuzz'
+	elif arg1 % 3 == 0:
+		solution = 'fizz'
+	elif arg1 % 5 == 0:
+		solution = 'buzz'
+	else:
+		solution = 'null'
+	return solution
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -87,7 +95,12 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+	input = input.lower()
+	vowel_total = 0
+	for letter in 'aeiou':
+		vowel_total += input.count(letter)
+    
+	return vowel_total
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
